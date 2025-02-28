@@ -1,1 +1,47 @@
+1. Console output from step 3:
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 511 bytes | 511.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/nchlscameron/assignment2.git
+   f7f1b5d..17c0c0c  master -> master
+
+2. Total number of commits in the repository:
+I determined the total commits (by anyone) using the command:
+  git rev-list --all --count
+
+3. Last modification of the README.md file:
+I used the command:
+  git log -1 -- README.md
+This command shows the details of the latest commit that modified the README.md file.
+
+4. Two reasons why branches are used in a Git repository:
+  - Branches allow developers to work on new features, bug fixes, or experiments in isolation from the main codebase.
+  - They facilitate parallel development and help in managing code reviews and integration without affecting the production branch.
+
+5. The difference between git log and git status:
+  - git log displays the commit history including commit messages, authors, dates, and commit IDs.
+  - git status shows the current state of the working directory and staging area (e.g., which files are modified, staged, or untracked).
+
+6. Command to see the commits where "Vehicle.h" was one of the committed files:
+  git log -- Vehicle.h
+
+7. Command to see the commits whose commit message contains the word "file":
+  git log --grep=file
+
+8. Object-Oriented Programming Concepts:
+   I. Inheritance:
+      A mechanism where a new class (subclass) derives properties and behaviors (methods) from an existing class (superclass), promoting code reuse.
+  II. Polymorphism:
+      The ability of different classes to be treated as instances of the same class through a common interface, often implemented via method overriding or overloading.
+ III. Encapsulation:
+      The bundling of data (attributes) and methods (functions) operating on that data into a single unit (class) while restricting direct access to some of the object's components.
+
+9. The main difference between the "Dictator and Lieutenants" workflow and the "Integration Manager" workflow lies in how integration and conflict resolution are managed. In the Integration Manager workflow, each developer pushes changes to their own public repository, and a single integration manager pulls from these repositories to resolve conflicts before merging them into the central (blessed) repository. In contrast, the Dictator and Lieutenants workflow uses a hierarchical approach where developers push their changes to an assigned lieutenant’s repository, the lieutenants resolve conflicts and merge changes for their group, and only then does the dictator merge these changes into the central repository.
+
+10. For a team of 100 developers, the Dictator and Lieutenants workflow offers significant benefits over the Centralized workflow. With the Centralized workflow, every developer must pull from and push directly to one shared repository, which can lead to frequent merge conflicts and coordination challenges as the team scales. In the Dictator and Lieutenants workflow, responsibilities are distributed: lieutenants manage a subset of developers, handling initial conflict resolution and integration before passing the refined changes up to the dictator. This hierarchical structure minimizes the integration burden on individual developers, reduces the potential for conflicts, and streamlines the overall development process in large teams.
+
 
