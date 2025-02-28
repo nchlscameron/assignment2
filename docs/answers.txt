@@ -1,3 +1,8 @@
+Annotations:
+- Git Lab Tutorials completed on: 2025-02-20
+- GitHub Account Setup on: 2019-03-23 
+- GitHub Repository Access: https://github.com/nchlscameron/assignment2 (access granted)
+
 1. Console output from step 3:
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
